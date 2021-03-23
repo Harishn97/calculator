@@ -2,7 +2,7 @@ import math
 
 
 def addition(a, b):
-    return a + b
+    return float(a) + float(b)
 
 
 # def subtraction(a, b):
@@ -16,19 +16,22 @@ def subtraction(a, b):
 
 
 def multiplication(a, b):
-    return a * b
+    return float(b) * float(a)
 
 
 def division(a, b):
-    return a / b
+    c = float(b) / float(a)
+    return round(c, 9)
 
 
 def squaring(a):
-    return a ** 2
+    return float(a) ** 2
 
 
 def squarerooting(a):
-    return math.sqrt(a)
+    a = float(a)
+    b = a ** 0.5
+    return round(float(b), 8)
 
 
 class Calculator:
