@@ -46,11 +46,11 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.square(row['Value 1']), float(row['Result']))
             self.assertEqual(self.calculator.result, float(row['Result']))
 
-    # def test_squareroot(self):
-    #     test_data = CsvReader('/src/csv/Unit Test Square Root.csv').data
-    #     for row in test_data:
-    #         self.assertEqual(self.calculator.squareroot(row['Value 1']), round(float(row['Result']),8))
-    #         self.assertEqual(self.calculator.result, round(float(row['Result']),8))
+    def test_squareroot(self):
+        test_data = CsvReader('/src/csv/Unit Test Square Root.csv').data
+        for row in test_data:
+            self.assertEqual(self.calculator.squareroot(row['Value 1']), round(float(row['Result']),8))
+            self.assertEqual(self.calculator.result, round(float(row['Result']),8))
 
     def test_results_property_calculator(self):
         self.assertEqual(self.calculator.result, 0)
