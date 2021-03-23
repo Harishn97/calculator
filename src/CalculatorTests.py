@@ -30,12 +30,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 1)
 
     def test_square_method_calculator(self):
-        self.assertEqual(self.calculator.square(2), 4)
-        self.assertEqual(self.calculator.result, 4)
-    #
-    # def test_squareroot_method_calculator(self):
-    #     self.assertEqual(calculator.squareroot(2, 2), 4)
-    #     self.assertEqual(calculator.result, 4)
+        self.assertEqual(self.calculator.square(3), 9)
+        self.assertEqual(self.calculator.result, 9)
+
+    def test_squareroot_method_calculator(self):
+        self.assertEqual(self.calculator.squareroot(9), 3)
+        self.assertEqual(self.calculator.result, 3)
 
 
 if __name__ == '__main__':
